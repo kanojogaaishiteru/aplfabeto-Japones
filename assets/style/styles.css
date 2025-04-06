@@ -1,0 +1,300 @@
+@page {
+    size: A2; /* Altere para A1 se necessário */
+    margin: 10mm; /* Ajuste as margens conforme necessário */
+}
+
+body {
+    font-family: Comic Sans MS, sans-serif; /* Corrigido para incluir uma fonte padrão */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.container {
+ display: grid;
+    position: absolute;
+    z-index: 2;
+    transform:scale(0.7);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    gap: 10px;
+   top: 660px; 
+    padding: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-repeat: repeat;
+    height:100%;
+   
+}
+.wallpaper
+{
+    background: none;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+   
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.bloco {
+   opacity: 1;
+    border: 3px solid black;
+    box-shadow: inset 0 0 0 6px salmon;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);
+    
+}
+.words, .example, .response, .emoji{
+    opacity: 1 !important;
+}
+.content {
+    opacity: 1;
+    height: inherit;
+    width: inherit;
+}
+
+.words {
+    opacity: 1 !important;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    font-size: 350%;
+}
+
+.example {
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+}
+
+.response {
+    display: flex;
+    font-size: 250%;
+    border-top: 7px solid salmon;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.response div {
+    flex: 1;
+    width: 100%;
+}
+
+.emoji {
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    margin-bottom: 10px;
+    order: -1;
+}
+
+.first-column {
+    box-shadow: inset 0 0 0 6px orange;
+}
+
+.first-column .border {
+    border-top-color: orange;
+}
+
+.segunda-coluna {
+    box-shadow: inset 0 0 0 6px pink;
+}
+
+.segunda-coluna .border {
+    border-top-color: pink;
+}
+
+.terceira-coluna {
+    box-shadow: inset 0 0 0 6px yellow;
+}
+
+.terceira-coluna .border {
+    border-top-color: yellow;
+}
+
+.quarta-coluna {
+    box-shadow: inset 0 0 0 6px green;
+}
+
+.quarta-coluna .border {
+    border-top-color: green;
+}
+
+.quinta-coluna {
+    box-shadow: inset 0 0 0 6px blueviolet;
+}
+
+.quinta-coluna .border {
+    border-top-color: blueviolet;
+}
+
+.sexta-coluna {
+    box-shadow: inset 0 0 0 6px rgb(250, 42, 205);
+}
+
+.sexta-coluna .border {
+    border-top-color: rgb(250, 42, 205);
+}
+
+.setima-coluna {
+    box-shadow: inset 0 0 0 6px lightskyblue;
+}
+
+.setima-coluna .border {
+    border-top-color: lightskyblue;
+}
+
+.oitava-coluna {
+    box-shadow: inset 0 0 0 6px #eecdd6;
+}
+
+.oitava-coluna .border {
+    border-top-color: #eecdd6;
+}
+
+.nona-coluna {
+    box-shadow: inset 0 0 0 6px black;
+}
+
+.nona-coluna .border {
+    border-top-color: black;
+}
+
+.ultima-coluna {
+    box-shadow: inset 0 0 0 6px darkcyan;
+}
+
+.ultima-coluna .border {
+    border-top-color: darkcyan;
+}
+
+.info-extra {
+    display: flex;
+    align-items: flex-end;
+}
+
+.response-column {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-interno-letras {
+    margin-top: -28px;
+}
+
+.emoji img {
+    width: 60px;
+}
+.no-content{
+    opacity: 1;
+    
+    color: transparent;
+    
+background-position: center ;
+    background-size:cover;
+    background-image: url(../img/eu\ meu\ amor\ i\ minha\ cunhadinha.png);
+}
+.no-content .response{
+    border: none;
+}
+.card-um{
+    background-image: url(../img/eu\ meu\ amor\ i\ minha\ cunhadinha.png);
+}
+.card-dois{
+    background-image: url(../img/eu\ meu\ amor\ i\ minha\ cunhadinha.png);
+}
+.card-tres{
+    background-image: url(../img/eu\ meu\ amor\ i\ minha\ cunhadinha.png);
+}
+.card-quatro{
+    background-image: url(../img/eu\ meu\ amor\ i\ minha\ cunhadinha.png);
+}
+.traducao-dois{
+    font-size: 250%;
+}
+
+.no-emoji{
+    opacity: 0;
+}
+
+
+.cards-container-geral{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position:relative;
+    z-index: 999;
+}
+  button, input {
+    position: relative;
+    z-index: 999;
+    margin: 10px;
+    background-color: #4f46e5; /* Roxo forte */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  button:hover, input:hover {
+    background-color: #4338ca; /* Roxo mais escuro */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  button:active, input:active {
+    transform: translateY(0px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .trocar-wallpaper{
+    display: flex;
+   justify-content: center;
+    
+  }
+
+  @media print {
+    button {
+        
+      display: none !important;
+    }
+    .cards-container-geral{
+        display: none;
+    }
+    .container{
+        transform: scale(0.8);
+        display: grid;
+        top: -200px;
+    }
+  }
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
