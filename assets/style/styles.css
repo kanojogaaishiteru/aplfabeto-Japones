@@ -20,7 +20,7 @@ body {
     grid-template-rows: repeat(5, 1fr);
     width: 100%;
     gap: 10px;
-   top: 660px; 
+   top: 960px; 
     padding: 0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-repeat: repeat;
